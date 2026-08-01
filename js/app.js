@@ -1,3 +1,46 @@
+
+
+const contraseña="271223";
+
+
+
+function entrar(){
+
+
+let clave =
+document.getElementById("clave").value;
+
+
+
+if(clave===contraseña){
+
+
+document.getElementById("inicio")
+.style.display="none";
+
+
+document.getElementById("pagina")
+.style.display="block";
+
+
+mostrarFotos();
+
+
+
+}else{
+
+
+alert("Contraseña incorrecta");
+
+
+}
+
+
+}
+
+
+
+
 function mostrarFotos(){
 
 
