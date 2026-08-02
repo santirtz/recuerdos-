@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nombre": "Las que me gustan ❤️",
+    "fecha": "",
+    "carpeta": "las-que-me-gustan",
+    "descripcion": "Mis fotos favoritas de nosotros."
+  },
+  {
+    "id": 2,
+    "nombre": "Salidas ✨",
+    "fecha": "",
+    "carpeta": "salidas",
+    "descripcion": "Momentos, paseos y días especiales juntos."
+  },
+  {
+    "id": 3,
+    "nombre": "Juntos ❤️",
+    "fecha": "",
+    "carpeta": "juntos",
+    "descripcion": "Nuestros momentos compartidos."
+  },
+  {
+    "id": 4,
+    "nombre": "Mudanza 🏡",
+    "fecha": "",
+    "carpeta": "mudanza",
+    "descripcion": "Un nuevo capítulo de nuestra historia."
+  },
+  {
+    "id": 5,
+    "nombre": "Random 📸",
+    "fecha": "",
+    "carpeta": "random",
+    "descripcion": "Pequeños recuerdos sin categoría."
+  },
+  {
+    "id": 6,
+    "nombre": "Egreso 🎓",
+    "fecha": "",
+    "carpeta": "egreso",
+    "descripcion": "Un momento importante para celebrar juntos."
+  }
+]
