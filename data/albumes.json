@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "nombre": "Navidad 🎄",
+    "fecha": "25 de diciembre de 2023",
+    "carpeta": "navidad",
+    "descripcion": "Nuestra primera Navidad juntos ❤️"
+  },
+  {
+    "id": 2,
+    "nombre": "Primer viaje ✈️",
+    "fecha": "15 de enero de 2024",
+    "carpeta": "primer-viaje",
+    "descripcion": "Nuestro primer viaje, lleno de aventuras y recuerdos."
+  }
+]
