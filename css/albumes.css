@@ -240,3 +240,172 @@
 
 
 }
+/* ==========================================
+   VISOR DE FOTOS
+========================================== */
+
+
+#visor{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.85);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+    animation:aparecerVisor .3s ease;
+
+}
+
+
+#visor img{
+
+    max-width:90%;
+
+    max-height:90%;
+
+    border-radius:20px;
+
+    object-fit:contain;
+
+}
+
+
+
+#cerrarVisor{
+
+    position:absolute;
+
+    top:25px;
+
+    right:25px;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    padding:0;
+
+    font-size:22px;
+
+    background:white;
+
+    color:#111;
+
+}
+
+
+
+@keyframes aparecerVisor{
+
+    from{
+
+        opacity:0;
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+#visor{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.88);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+
+#imagenVisor{
+
+    max-width:85%;
+
+    max-height:85%;
+
+    border-radius:20px;
+
+}
+
+
+
+#cerrarVisor,
+#fotoAnterior,
+#fotoSiguiente{
+
+
+    position:absolute;
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    padding:0;
+
+}
+
+
+
+#cerrarVisor{
+
+    top:25px;
+
+    right:25px;
+
+}
+
+
+
+#fotoAnterior{
+
+    left:25px;
+
+}
+
+
+
+#fotoSiguiente{
+
+    right:25px;
+
+}
+
+
+
+#contadorFotos{
+
+    position:absolute;
+
+    bottom:25px;
+
+    color:white;
+
+    font-size:18px;
+
+}
