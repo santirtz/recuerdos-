@@ -2,113 +2,88 @@
 <html lang="es">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuerdos ❤️</title>
 
-<title>Recuerdos </title>
-
-<link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/albumes.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/animaciones.css">
 </head>
-
 
 <body>
 
+    <!-- Pantalla de inicio -->
+    <section id="inicio">
 
-<section id="inicio">
+        <div class="login">
 
+            <h1>Recuerdos ❤️</h1>
 
-<div class="entrada">
+            <p class="frase">
+                "Cada fotografía es una forma de volver a abrazarte,
+                incluso cuando solo existe el recuerdo."
+            </p>
 
-<h1>Recuerdos </h1>
+            <input
+                type="password"
+                id="clave"
+                placeholder="Nuestra fecha especial">
 
-<p>
-Un lugar solamente nuestro
-</p>
+            <button onclick="entrar()">
+                Entrar
+            </button>
 
+        </div>
 
-<input 
-type="password"
-id="clave"
-placeholder="Nuestra contraseña">
+    </section>
 
+    <!-- Página principal -->
+    <main id="pagina">
 
-<button onclick="entrar()">
-Entrar
-</button>
+        <header>
 
+            <h1>Recuerdos ❤️</h1>
 
-</div>
+            <nav>
 
+                <button onclick="mostrarAlbumes()">
+                    📷 Álbumes
+                </button>
 
-</section>
+                <button onclick="mostrarTimeline()">
+                    📅 Línea de tiempo
+                </button>
 
+                <button onclick="mostrarMusica()">
+                    🎵 Música
+                </button>
 
+                <button onclick="mostrarCarta()">
+                    💌 Carta
+                </button>
 
+            </nav>
 
+        </header>
 
-<section id="pagina">
+        <section id="contenido">
 
+            <!-- Aquí aparecerá el contenido dinámicamente -->
 
-<header>
+        </section>
 
+    </main>
 
-<h1>
-Recuerdos
-</h1>
-
-
-<p>
-Nuestra historia en momentos
-</p>
-
-
-</header>
-
-
-
-
-<nav>
-
-
-<button onclick="mostrarFotos()">
-📸 Fotos
-</button>
-
-
-<button onclick="mostrarMusica()">
-🎵 Música
-</button>
-
-
-<button onclick="mostrarAgregar()">
-➕ Agregar
-</button>
-
-
-</nav>
-
-
-
-<main>
-
-
-<div id="contenido">
-
-</div>
-
-
-</main>
-
-
-</section>
-
-
-
-
-<script src="js/app.js"></script>
-
+    <script src="js/app.js"></script>
+    <script src="js/albumes.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/spotify.js"></script>
+    <script src="js/carta.js"></script>
+    <script src="js/animaciones.js"></script>
 
 </body>
 
