@@ -1,232 +1,61 @@
-// ==========================
-// CONFIGURACIÓN
-// ==========================
+/* ==========================================
+   RECUERDOS ❤️
+   Archivo principal
+========================================== */
 
+const CONTRASENA = "271223";
 
-const contraseña = "271223";
+/* ------------------------------------------
+   Iniciar la página
+------------------------------------------ */
 
+window.addEventListener("DOMContentLoaded", () => {
 
-// Cambiá este número cada vez que hagas cambios
-// Esto obliga al navegador a cargar la versión nueva
+    const input = document.getElementById("clave");
 
-const versionPagina = "?v=1";
+    input.focus();
 
+    input.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+            entrar();
+        }
+    });
 
+});
 
-// ==========================
-// INGRESAR A LA PÁGINA
-// ==========================
+/* ------------------------------------------
+   Entrar
+------------------------------------------ */
 
+function entrar() {
 
-function entrar(){
+    const input = document.getElementById("clave");
+    const clave = input.value.trim();
 
+    if (clave === CONTRASENA) {
 
-let clave =
-document.getElementById("clave").value;
+        document.getElementById("inicio").style.display = "none";
+        document.getElementById("pagina").style.display = "block";
 
+        mostrarAlbumes();
 
+    } else {
 
-if(clave === contraseña){
+        alert("❤️ La contraseña no es correcta.");
 
+        input.value = "";
+        input.focus();
 
-
-document.getElementById("inicio")
-.style.display = "none";
-
-
-
-document.getElementById("pagina")
-.style.display = "block";
-
-
-
-mostrarFotos();
-
-
-
-}
-
-else{
-
-
-alert("Contraseña incorrecta");
-
+    }
 
 }
 
+/* ------------------------------------------
+   Cambiar de sección
+------------------------------------------ */
 
+function cambiarContenido(html) {
 
-}
-
-
-
-
-// ==========================
-// MOSTRAR FOTOS
-// ==========================
-
-
-
-function mostrarFotos(){
-
-
-
-let contenido =
-document.getElementById("contenido");
-
-
-
-contenido.innerHTML = `
-
-
-
-<div class="card">
-
-
-<h2>
-Nuestros álbumes ❤️
-</h2>
-
-
-
-<div class="galeria">
-
-
-
-<img src="fotos/navidad/foto1.jpg${versionPagina}">
-
-
-<img src="fotos/navidad/foto2.jpg${versionPagina}">
-
-
-
-<img src="fotos/primer-viaje/foto1.jpg${versionPagina}">
-
-
-<img src="fotos/primer-viaje/foto2.jpg${versionPagina}">
-
-
-
-</div>
-
-
-
-</div>
-
-
-
-`;
-
-
-
-}
-
-
-
-
-
-// ==========================
-// MOSTRAR MÚSICA
-// ==========================
-
-
-
-function mostrarMusica(){
-
-
-
-let contenido =
-document.getElementById("contenido");
-
-
-
-contenido.innerHTML = `
-
-
-<div class="card">
-
-
-<h2>
-Nuestra música 🎵
-</h2>
-
-
-
-<iframe
-
-style="border-radius:12px"
-
-src="https://open.spotify.com/embed/playlist/TU_ID_DE_PLAYLIST"
-
-frameborder="0"
-
-
-allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-
-
-</iframe>
-
-
-
-</div>
-
-
-`;
-
-
-
-}
-
-
-
-
-// ==========================
-// AGREGAR RECUERDOS
-// ==========================
-
-
-
-function mostrarAgregar(){
-
-
-
-let contenido =
-document.getElementById("contenido");
-
-
-
-contenido.innerHTML = `
-
-
-
-<div class="card">
-
-
-
-<h2>
-Agregar recuerdos 📸
-</h2>
-
-
-
-<p>
-Próximamente podrás subir fotos directamente desde aquí ❤️
-</p>
-
-
-
-<input 
-type="file"
-multiple>
-
-
-
-</div>
-
-
-
-`;
-
-
+    document.getElementById("contenido").innerHTML = html;
 
 }
